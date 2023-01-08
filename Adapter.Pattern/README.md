@@ -1,0 +1,2 @@
+# Adapter Pattern
+A program that retrieves data from different types of databases (e.g. MySQL, MongoDB, Cassandra). The Adapter pattern could be used to create adapters for each type of database, allowing the program to retrieve data from any of the supported databases.

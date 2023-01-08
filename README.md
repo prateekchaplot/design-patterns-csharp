@@ -11,4 +11,5 @@
 - [Abstract Factory Pattern](./Abstract.Factory/)
 
 ## Structural
+- [Adapter Pattern](./Adapter.Pattern/)
 - [Bridge Pattern](./Bridge.Pattern/)
