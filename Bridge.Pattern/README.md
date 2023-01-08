@@ -1,0 +1,2 @@
+# Bridge Pattern
+A program that integrates with multiple online payment gateways (e.g. PayPal, Stripe, Square). The Adapter pattern could be used to create adapters for each payment gateway, allowing the program to process payments through any of the supported gateways.
