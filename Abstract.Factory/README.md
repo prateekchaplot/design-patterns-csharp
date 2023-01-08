@@ -1,0 +1,2 @@
+# Abstract Factory Pattern
+A program that generates and displays various types of charts (e.g. bar charts, line charts, pie charts). The abstract factory design pattern could be used to create different chart "families" (e.g. 2D charts, 3D charts) and the individual charts within each family.
