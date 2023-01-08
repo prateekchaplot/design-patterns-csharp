@@ -9,3 +9,6 @@
 ## Creational
 - [Factory Pattern](./Factory.Pattern/)
 - [Abstract Factory Pattern](./Abstract.Factory/)
+
+## Structural
+- [Adapter Pattern](./Adapter.Pattern/)
