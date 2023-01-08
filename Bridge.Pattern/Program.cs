@@ -1,5 +1,7 @@
-﻿using Bridge.Pattern;
-using Bridge.Pattern.PaymentGateways;
+﻿using Bridge.Pattern.Instruments;
+using Bridge.Pattern.Interface;
+using Bridge.Pattern.Sounds;
 
-IPaymentGateway gateway = new PaypalPaymentGateway();
-gateway.Charge(19.99m);
+ISound sound = new AcousticSound();
+Instrument instrument = new Piano(sound);
+instrument.Play();

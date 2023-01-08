@@ -1,2 +1,2 @@
 # Bridge Pattern
-A program that integrates with multiple online payment gateways (e.g. PayPal, Stripe, Square). The Adapter pattern could be used to create adapters for each payment gateway, allowing the program to process payments through any of the supported gateways.
+A program that allows users to play different musical instruments using different sounds. The Bridge pattern could be used to separate the abstraction (the instruments) from the implementation (the sounds). This would allow the program to support adding new instruments and sounds without requiring changes to the existing code.
