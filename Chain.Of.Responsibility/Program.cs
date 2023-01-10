@@ -1,16 +1,17 @@
 ﻿using Chain.Of.Responsibility;
-using Chain.Of.Responsibility.ActionHandlers;
+using Chain.Of.Responsibility.SecurityHandlers;
 
-ActionHandler attackHandler = new AttackActionHandler(null);
-ActionHandler pickUpHandler = new PickUpActionHandler(attackHandler);
-ActionHandler moveHandler = new MoveActionHandler(pickUpHandler);
+SecurityHandler antivirusHandler = new AntivirusHandler(null);
+SecurityHandler firewallHandler = new FirewallHandler(antivirusHandler);
+SecurityHandler intrusionHandler = new IntrusionDetectionHandler(firewallHandler);
 
-var commands = new List<Chain.Of.Responsibility.Action>
+var securityAlerts = new List<string>
 {
-    new Chain.Of.Responsibility.Action { Type = "go", Target = "north" },
-    new Chain.Of.Responsibility.Action { Type = "pick up", Target = "sword" },
-    new Chain.Of.Responsibility.Action { Type = "attack", Target = "goblin" }
+    "Firewall blocked a suspicious connection",
+    "Intrusion detected from IP address 123.456.789",
+    "Virus warning: Trojan.Badware found",
+    "Nothing to report"
 };
 
-foreach (var command in commands)
-    moveHandler.Handle(command);
+foreach (string alert in securityAlerts)
+    intrusionHandler.HandleRequest(alert);
