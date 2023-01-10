@@ -1,14 +1,14 @@
-namespace Chain.Of.Responsibility.CommandHandlers;
+namespace Chain.Of.Responsibility.ActionHandlers;
 
-public class MoveCommandHandler : CommandHandler
+public class MoveActionHandler : ActionHandler
 {
-    public MoveCommandHandler(CommandHandler? successor) : base(successor)
+    public MoveActionHandler(ActionHandler? successor) : base(successor)
     {
     }
 
-    public override void Handle(Command command)
+    public override void Handle(Action command)
     {
-        if (command.Action == "go")
+        if (command.Type == "go")
         {
             string message;
             switch (command.Target)

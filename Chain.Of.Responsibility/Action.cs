@@ -1,7 +1,7 @@
 namespace Chain.Of.Responsibility;
 
-public class Command
+public class Action
 {
-    public string Action { get; set; } = string.Empty;
+    public string Type { get; set; } = string.Empty;
     public string Target { get; set; } = string.Empty;
 }
