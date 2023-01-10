@@ -13,3 +13,6 @@
 ## Structural
 - [Adapter Pattern](./Adapter.Pattern/)
 - [Bridge Pattern](./Bridge.Pattern/)
+
+## Behavioral
+- [Chain of Responsibility](./Chain.Of.Responsibility/)
