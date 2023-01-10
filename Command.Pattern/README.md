@@ -1,0 +1,2 @@
+# Command Pattern
+A system for automating tasks on a computer, such as backing up files or shutting down the system. The system could use the Command pattern to represent the tasks as command objects, which could be executed on a schedule or at the user's request.
