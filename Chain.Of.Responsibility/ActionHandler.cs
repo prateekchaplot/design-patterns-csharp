@@ -1,17 +1,17 @@
 namespace Chain.Of.Responsibility;
 
-public abstract class CommandHandler
+public abstract class ActionHandler
 {
-    private readonly CommandHandler? _successor;
+    private readonly ActionHandler? _successor;
 
-    public CommandHandler(CommandHandler? successor)
+    public ActionHandler(ActionHandler? successor)
     {
         _successor = successor;
     }
 
-    public abstract void Handle(Command command);
+    public abstract void Handle(Action command);
 
-    protected void PassToSuccessor(Command command)
+    protected void PassToSuccessor(Action command)
     {
         if (_successor != null)
             _successor.Handle(command);

@@ -1,15 +1,15 @@
 ﻿using Chain.Of.Responsibility;
-using Chain.Of.Responsibility.CommandHandlers;
+using Chain.Of.Responsibility.ActionHandlers;
 
-CommandHandler attackHandler = new AttackCommandHandler(null);
-CommandHandler pickUpHandler = new PickUpCommandHandler(attackHandler);
-CommandHandler moveHandler = new MoveCommandHandler(pickUpHandler);
+ActionHandler attackHandler = new AttackActionHandler(null);
+ActionHandler pickUpHandler = new PickUpActionHandler(attackHandler);
+ActionHandler moveHandler = new MoveActionHandler(pickUpHandler);
 
-var commands = new List<Command>
+var commands = new List<Chain.Of.Responsibility.Action>
 {
-    new Command { Action = "go", Target = "north" },
-    new Command { Action = "pick up", Target = "sword" },
-    new Command { Action = "attack", Target = "goblin" }
+    new Chain.Of.Responsibility.Action { Type = "go", Target = "north" },
+    new Chain.Of.Responsibility.Action { Type = "pick up", Target = "sword" },
+    new Chain.Of.Responsibility.Action { Type = "attack", Target = "goblin" }
 };
 
 foreach (var command in commands)
