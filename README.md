@@ -16,3 +16,4 @@
 
 ## Behavioral
 - [Chain of Responsibility](./Chain.Of.Responsibility/)
+- [Command Patter](./Command.Pattern/)
